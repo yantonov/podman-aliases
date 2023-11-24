@@ -1,3 +1,5 @@
-[Podman](https://podman.io/) aliases
+Couple of aliases for [podman](https://podman.io/)
 
-Based on [alias](https://github.com/yantonov/alias) tool
+### Usage:
+Compile [alias](https://github.com/yantonov/alias) artifact, name it as podman, and put it here.  
+Add this repository to the front of PATH.
