@@ -1,5 +1,5 @@
 [alias]
 init="machine init podman-machine-default"
-rm="machine rm podman-machine-default"
+rmm="machine rm podman-machine-default"
 restart="!restart.sh"
 
