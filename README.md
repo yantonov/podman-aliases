@@ -1,14 +1,53 @@
-### About
-[Here](https://github.com/yantonov/podman-aliases/blob/master/config.toml) is a couple of aliases for [podman](https://podman.io/)
+# podman-aliases
 
-### Installation
-1. clone and add this repository to the front of PATH
-2. use 
+Useful aliases for [Podman](https://podman.io/), powered by [alias](https://github.com/yantonov/alias).
+
+## Table of contents
+
+- [Installation](#installation)
+- [Examples](#examples)
+- [Configuration](#configuration)
+
+## Installation
+
+Clone the repository and run the installation script:
+
 ```bash
-    install.sh
+git clone https://github.com/yantonov/podman-aliases.git
+cd podman-aliases
+./install.sh
 ```
-script that downloads latest [alias](http://github.com/yantonov/alias) distribution for the current operating system names it in appropriate way and puts to the current directory  
 
-Alternatively, you can:  
-a) build [alias](http://github.com/yantonov/alias) manually (or use the available distribution)  
-b) name it as `podman` and put it into this repository (binary file has already ignored inside this repository)  
+Add the repository directory to the beginning of your `PATH`.
+
+Alternatively, download or build the [alias](https://github.com/yantonov/alias) executable, name it `podman`, and place it in the repository directory.
+
+## Examples
+
+**Initialize the default Podman machine:**
+
+```bash
+podman init
+```
+
+Equivalent to `podman machine init podman-machine-default`.
+
+**Remove the default Podman machine:**
+
+```bash
+podman rmm
+```
+
+Equivalent to `podman machine rm podman-machine-default`.
+
+**Restart the Podman environment:**
+
+```bash
+podman restart
+```
+
+Runs the repository's `restart.sh` script.
+
+## Configuration
+
+Aliases are defined in [`config.toml`](config.toml). Edit it to add or modify shortcuts. See the [alias documentation](https://github.com/yantonov/alias#alias-types) for details.
